@@ -7,11 +7,11 @@ This is payment gateway for Bitcoin Lightning Network users who have running own
 You need to have open lnd REST API port to use this module.  
 Module use invoice.macaroon hex for invoice generation.  
   
-Here you can try demo:  
+Here you can try demo:    
   
-https://demo-oc2102.khita.org/
-https://demo-oc2102.khita.org/admin/
-demo;demo
+https://demo-oc2102.khita.org/  
+https://demo-oc2102.khita.org/admin/  
+demo;demo  
   
 Bitcoin Lightning Network is on development now, so be careful, you can lost your BTC.   
   
@@ -26,7 +26,7 @@ https://tippin.me/@pavlowd
   
 **Installation**
 
-1. You can unzip/upload content or use ocmod to install module.
+1. You can unzip/upload content or use ocmod to install module.  
 2. Install module "Bitcoin Payment" in Extension > Payment.
 3. Edit module configuration, and save changes.  
 If you don't see module on Payments page, make sure that you have rights to edit module in System > User Permissions > Administrator  
