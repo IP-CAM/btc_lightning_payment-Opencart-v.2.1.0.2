@@ -77,12 +77,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="btc_lightning_payment_price_change_amount"><span data-toggle="tooltip" title="<?php echo $help_price_change_amount; ?>"><?php echo $entry_price_change_amount; ?></span></label>
-            <div class="col-sm-10">
-              <input type="text" name="btc_lightning_payment_price_change_amount" value="<?php echo $btc_lightning_payment_price_change_amount; ?>" placeholder="<?php echo $entry_price_change_amount; ?>" id="btc_lightning_payment_price_change_amount" class="form-control" />
-            </div>
-          </div>
-          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-order-status"><?php echo $entry_order_status; ?></label>
             <div class="col-sm-10">
               <select name="btc_lightning_payment_order_status_id" id="input-order-status" class="form-control">
