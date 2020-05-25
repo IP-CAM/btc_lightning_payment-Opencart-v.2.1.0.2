@@ -15,10 +15,6 @@ class ModelPaymentBtcLightningPayment extends Model {
 	     $status = false;
 	 	}
 
-		if (($total / (int)$btc_price) > 0.043) {
-			$status = false;
-		}
-
 		if ($this->config->get('btc_lightning_payment_total') > 0 && $this->config->get('btc_lightning_payment_total') > $total) {
 			$status = false;
 		}	
