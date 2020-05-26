@@ -73,6 +73,7 @@ class ControllerPaymentBtcLightningPayment extends Controller {
 		 curl_setopt($ch, CURLOPT_POST, 1);
 		 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		    "Grpc-Metadata-macaroon: $macaroon_base64"
 		    ));
@@ -92,6 +93,7 @@ class ControllerPaymentBtcLightningPayment extends Controller {
 		 $ch = curl_init("https://$lnd_ip:$lnd_port/v1/invoice/$r_hash_hex");
 		 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		    "Grpc-Metadata-macaroon: $macaroon_base64"
 		    ));
